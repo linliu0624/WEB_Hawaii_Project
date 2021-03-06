@@ -65,11 +65,238 @@ header nav li a {
   font-size: 1.35rem;
 }
 
+main section.backImage {
+  min-height: 70vh;
+  width: 100%;
+  background-image: url("../Pictures/pexels-photo-416676.jpeg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main section.backImage h3 {
+  font-size: 3.5rem;
+  color: white;
+  margin: 2rem 0rem;
+}
+
+main section.backImage button.start {
+  background-color: #3bf0e5;
+  color: white;
+  padding: 1.3rem 2.5rem;
+  font-size: 2rem;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+main section.backImage div.filter {
+  min-height: 70vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+main section.secondPage {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section.secondPage h2 {
+  font-size: 2rem;
+  margin-top: 1.5rem;
+}
+
+main section.secondPage section.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  min-height: 55vh;
+}
+
+main section.secondPage section.cards div.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 200px;
+          flex: 1 1 200px;
+  margin: 2rem 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main section.secondPage section.cards div.card img {
+  width: 18vw;
+  height: 18vw;
+  border-radius: 50%;
+  margin: 1rem 0rem;
+}
+
+main section.secondPage section.cards div.card h3 {
+  font-size: 1.8rem;
+}
+
+main section.secondPage section.cards div.card p {
+  margin: 1rem 0rem;
+  font-size: 1.25rem;
+}
+
+main section.secondPage section.cards div.card a {
+  color: white;
+  text-decoration: none;
+  background-color: #33a6ad;
+  padding: 1rem 1.5rem;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 20vh;
+  background-color: #bdbdbd;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer div.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer h2 {
+  font-size: 2rem;
+}
+
+footer img {
+  width: 5vw;
+  height: 5vw;
+}
+
+footer nav {
+  width: 30%;
+}
+
+footer nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer nav ul li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 80px;
+          flex: 1 1 80px;
+}
+
+footer nav ul li a {
+  font-size: 1.35rem;
+  color: black;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+footer section.links a {
+  margin: 1rem;
+}
+
+footer section.links a img {
+  width: 5vw;
+  height: 5vw;
+}
+
 @media screen and (max-width: 800px) {
   header div.logo {
     margin-left: 0.5rem;
   }
   header div.logo img {
+    width: 10vw;
+    height: 10vw;
+  }
+  main section.secondPage section.cards div.card img {
+    width: 30vw;
+    height: 30vw;
+  }
+  footer div.logo img {
+    width: 10vw;
+    height: 10vw;
+  }
+  footer section.links a img {
+    width: 10vw;
+    height: 10vw;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  header div.logo {
+    margin-left: 0.5rem;
+  }
+  header div.logo img {
+    width: 15vw;
+    height: 15vw;
+  }
+  main section.secondPage section.cards div.card img {
+    width: 50vw;
+    height: 50vw;
+  }
+  footer div.logo img {
+    width: 20vw;
+    height: 20vw;
+  }
+  footer section.links a img {
     width: 15vw;
     height: 15vw;
   }
