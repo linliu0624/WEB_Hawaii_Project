@@ -24,6 +24,13 @@ header {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: white;
+  -webkit-box-shadow: 3px 3px 5px 1px #6b6b6b;
+          box-shadow: 3px 3px 5px 1px #6b6b6b;
 }
 
 header div.logo {
@@ -96,8 +103,8 @@ main section.backImage h3 {
 }
 
 main section.backImage button.start {
-  background-color: #3bf0e5;
-  color: white;
+  background-color: #29d8cc;
+  color: black;
   padding: 1.3rem 2.5rem;
   font-size: 2rem;
   border: none;
@@ -256,6 +263,22 @@ footer section.links a {
 footer section.links a img {
   width: 5vw;
   height: 5vw;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #09777d;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0ec6cf;
 }
 
 @media screen and (max-width: 800px) {

@@ -17,6 +17,11 @@ header {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: white;
+  box-shadow:  3px 3px 5px 1px rgb(107,107,107);
   div.logo {
     margin-left: 2rem;
     display: flex;
@@ -67,8 +72,8 @@ main {
       margin: 2rem 0rem;
     }
     button.start {
-      background-color: #3bf0e5;
-      color: rgb(255, 255, 255);
+      background-color: #29d8cc;
+      color: black;
       padding: 1.3rem 2.5rem;
       font-size: 2rem;
       border: none;
@@ -181,6 +186,24 @@ footer {
       }
     }
   }
+}
+
+// scroller
+// width
+::-webkit-scrollbar{
+  width: 10px;
+}
+// track
+::-webkit-scrollbar-track{
+  background-color: #f1f1f1;
+}
+// handle
+::-webkit-scrollbar-thumb{
+  background: #09777d;
+}
+// handle on hover
+::-webkit-scrollbar-thumb:hover{
+  background: #0ec6cf;
 }
 
 @media screen and (max-width: 800px) {
