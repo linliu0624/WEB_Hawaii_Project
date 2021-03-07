@@ -21,7 +21,7 @@ header {
   top: 0;
   z-index: 1;
   background-color: white;
-  box-shadow:  3px 3px 5px 1px rgb(107,107,107);
+  box-shadow: 3px 3px 5px 1px rgb(107, 107, 107);
   div.logo {
     margin-left: 2rem;
     display: flex;
@@ -110,17 +110,26 @@ main {
         display: flex;
         flex-direction: column;
         flex: 1 1 200px;
-        margin: 2rem 2rem;
+        margin: 2rem;
         align-items: center;
         justify-content: space-around;
 
-        img {
+        div.image-container {
+          overflow: hidden;
           width: 18vw;
           height: 18vw;
           border-radius: 50%;
-          margin: 1rem 0rem;
+          img {
+            width: 18vw;
+            height: 18vw;
+            border-radius: 50%;
+            transition: all 0.2s ease-in;
+            // margin: 1rem 0rem;
+          }
+          img:hover {
+            transform: scale(1.2);
+          }
         }
-
         h3 {
           font-size: 1.8rem;
         }
@@ -190,19 +199,19 @@ footer {
 
 // scroller
 // width
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 10px;
 }
 // track
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
   background-color: #f1f1f1;
 }
 // handle
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background: #09777d;
 }
 // handle on hover
-::-webkit-scrollbar-thumb:hover{
+::-webkit-scrollbar-thumb:hover {
   background: #0ec6cf;
 }
 
